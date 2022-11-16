@@ -1,0 +1,92 @@
+.nav{
+    display: flex;
+    padding-top: 43px;
+    align-items: center;
+    justify-content: space-between;    
+}
+.navBar{
+    display: flex;
+    align-items: center;
+}
+.navLink{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+.navBar i{
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+.btnP{
+    padding:13.5px 26.5px;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    /* color: #1e1515; */
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.navLink h4:hover {
+    color: #A02279;
+} 
+
+.navLinK h4.active {
+    color: #A02279;
+} 
+
+@media screen and (max-width:1200px) {
+    .navLink {
+            gap: 28px;
+        }
+}
+
+/* tablet screen */
+@media screen and (max-width:1024px){
+        .nav {
+            align-items: flex-start;
+        }
+        .navBar{
+            z-index: 99;
+        }
+        .nav .logo{
+            z-index: 100;
+        }
+        
+        .navLink {
+            display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: white;
+                /* overflow-y: hidden; */
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: -110%;
+                align-items: stretch;
+                padding: 120px 64px 80px;
+                z-index: -1;
+                gap: 64px;
+        }
+        .navLink.active{
+            left: 0%;
+        }
+        .navBar i {
+            display: block;
+            
+        }    
+}
+@media screen and (max-width:600px) {
+    .navLink {
+            padding: 120px 24px 80px;
+        }
+                .logo img{
+                    width: 80%;
+                }
+        .navBar i {
+                    font-size: 24px;
+             }
+}
+

@@ -1,0 +1,46 @@
+.inspo{
+    margin: 39px 0 53px;
+}
+.inspoCards{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 43px;
+}
+.inspoCard{
+    border-radius: 15px;
+    padding: 16px;
+    background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+}
+.inspoCardImg{
+    width: 100%;
+}
+.inspoCardD{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+.inspoCardD div{
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;    
+}
+.star{
+    display: flex;
+    gap: 8px;
+    margin-top: 9px;
+}
+@media screen and (max-width:1024px) {
+    .inspoCards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+}
+@media screen and (max-width:600px) {
+    .inspoCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

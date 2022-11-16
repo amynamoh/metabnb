@@ -1,0 +1,66 @@
+.modal{
+    display: flex;
+        flex-direction: column;
+        color: #000000;
+        padding: 24px 32px;
+        gap:16px;
+        /* width: max-content; */
+}
+.modal h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #CFD8DC;
+}
+
+.modal h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.modal h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.connect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+    padding: 12px 20px;
+    gap: 135px 
+}
+
+.connectD {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.connectD img {
+     font-size: 24px;
+}
+
+@media screen and (max-width:600px){
+    .connect {
+            gap: 80px;
+        }
+}
+
+@media screen and (max-width:360px) {
+    .connect {
+        gap: 64px;
+    }
+}
+@media screen and (max-width:326px) {
+    .connect {
+        gap: 48px;
+    }
+}

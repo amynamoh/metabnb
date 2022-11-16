@@ -1,0 +1,76 @@
+.placeall{
+    margin: 127px 0 77px;
+    display: flex;
+    align-items: center;
+    gap: 6%; 
+    justify-content: space-between;
+}
+.placeD {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+.placefilter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.placefilter input{    
+    border: 1px solid #512929;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding: 14px 12px;
+    text-align: left;
+    width: 161px;
+}
+.placefilter img{    
+    position: absolute;
+    right: 12px;
+}
+@media screen and (max-width:1024px) {
+    .placeall{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 48px;
+        margin: 97px 0 77px;
+    }
+    .placeD {
+        width: 100%;
+    }
+    .placefilter {
+        width: 100%;
+    }
+    .placefilter input {
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px) {
+    .placeall {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 48px;
+        margin: 77px 0;
+    }
+    .placeD {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width:650px) {
+    .placeD {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:400px) {
+
+    .placeD {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,141 @@
+.hero{
+    padding-top: 125px;
+    display: flex;
+    gap: 48px;
+    /* position: relative; */
+}
+.heroLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 55%;
+}
+.heroSpan {
+    color: #A02279;
+}
+.heroSerach{
+    display: flex;
+}
+.hero input{
+    font-size: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid #A3A3A3;
+    padding: 19px 15px;
+    height: 54px;
+    border-radius: 8px 0px 0px 8px;
+    /* width: 390px; */
+    width: 60%;
+    color: #B8B8B8;
+    opacity: 60%;
+    background: rgba(23, 11, 11, 0.1);
+}
+.btnP2{
+    padding: 17px 87px;
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    color: #ffffff;
+    border-radius: 0px 8px 8px 0px;
+    width: 20%;
+}
+.heroRight {
+    width: 40%;
+}
+@media screen and (max-width:1400px){
+    .heroRight {
+            width: 35%;
+        }
+}
+@media screen and (max-width:1250px) {
+    .btnP2 {
+        padding: 17px 60px;
+    }
+}
+
+/* tablet screen */
+@media screen and (max-width:1024px) {
+        .hero {
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+            padding-top: 64px;
+        }
+        .heroLeft {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            width: 100%;
+            text-align: center;
+        }
+        .hero input {
+            width: 72%;
+        }
+        .heroRight {
+            width: 100%;
+       }
+        #hero {
+           width: 100%;
+       }
+}
+@media screen and (max-width:755px) {
+    .hero input {
+        width: 68%;
+    }
+}
+@media screen and (max-width:680px) {
+    .hero input {
+        width: 65%;
+    }
+}
+@media screen and (max-width:630px) {
+         .btnP2 {
+             padding: 17px 54px;
+         }
+}
+@media screen and (max-width:515px) {
+    .btnP2 {
+            padding: 17px 48px;
+        } 
+}
+@media screen and (max-width:480px) {
+
+    .hero input {
+        width: 60%
+    }
+    .btnP2 {
+        padding: 17px 40px;
+    }
+}
+@media screen and (max-width:390px) {
+    .hero input {
+        width: 56%
+    }
+
+    .btnP2 {
+        padding: 17px 32px;
+    }
+}
+@media screen and (max-width:320px) {
+    .hero input {
+        width: 50%
+    }
+
+    .btnP2 {
+        padding: 17px 28px;
+    }
+    .hero span{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .hero input {
+            font-size: 10px;
+        }
+    .btnP2 {
+            padding: 21px 20px;
+            font-size: 10px;
+        }
+
+}
+
